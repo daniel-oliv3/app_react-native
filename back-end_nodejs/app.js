@@ -61,7 +61,21 @@ app.post('/cadastrar', async (req, res) => {
 
 //Listar Orçamento
 app.get("/listar-orcamento", async (req, res) => {
-    res.send("listar orcamento");
+    await Orcamento.findAll({
+        attributes: ['id', 'name', 'subject'],
+        order: [['id', 'DESC']]
+    })
+    .then((orcamento) => {
+        return res.json({
+            erro: false,
+            orcamento
+        });
+    }).catch(() => {
+        return res.status(400).json({
+            erro: true,
+            mensagem: "Erro: Nenhum orçamento encontrado!"
+        });
+    });
 });
 
 
