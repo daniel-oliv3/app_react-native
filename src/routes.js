@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 export default function Routes(){
     return (
         <>
-        <Text>Rotas...</Text>
+        <Text>Rotas SKATE PARADISE...</Text>
         </>
     )
 }
