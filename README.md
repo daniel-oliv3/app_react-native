@@ -14,3 +14,5 @@ Para navegar entre as páginas
 ### expo install react-native-screens react-native-safe-area-context
 
 ### npm install @react-navigation/stack
+
+### npm install react-native-gesture-handler
