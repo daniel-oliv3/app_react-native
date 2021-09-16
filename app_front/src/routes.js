@@ -23,7 +23,7 @@ export default function Routes(){
                 <Stack.Screen 
                 name="Home" 
                 component={Home} 
-                options={{headerTitle: "Listar Orçamento"}}
+                options={{headerTitle: "Listar os Orçamento"}}
                 />
             </Stack.Navigator>
         </NavigationContainer>
