@@ -16,3 +16,5 @@ Para navegar entre as páginas
 ### npm install @react-navigation/stack
 
 ### npm install react-native-gesture-handler
+
+### expo install @react-native-masked-view/masked-view
