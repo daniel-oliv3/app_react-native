@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 import Home from './pages/Home';
+import Visualizar from './pages/Visualizar';
 
 export default function Routes(){
 
@@ -24,6 +25,11 @@ export default function Routes(){
                 name="Home" 
                 component={Home} 
                 options={{headerTitle: "Listar os Orçamento"}}
+                />
+                <Stack.Screen 
+                name="Visualizar" 
+                component={Visualizar} 
+                options={{headerTitle: "Visualizar os Orçamento"}}
                 />
             </Stack.Navigator>
         </NavigationContainer>

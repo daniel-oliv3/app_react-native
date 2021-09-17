@@ -105,7 +105,22 @@ app.post('/cadastrar-orcamento', async (req, res) => {
     });
 });
 
-
+//Visualizar orçamento "descrição"
+app.get("/visualizar-orcamento/:id", async (req, res) => {
+   const {id} = req.params;
+   await Orcamento.findByPk(id)
+   .then((orcamento) => {
+       return res.json({
+           erro: false,
+           orcamento
+       });
+   }).catch(() => {
+    return res.status(400).json({
+        erro: true,
+        mensagem: "Erro: Orçamento não foi enviado!"
+    });
+   }); 
+});
 
 
 app.listen(8080, () => {

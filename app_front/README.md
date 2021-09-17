@@ -18,3 +18,9 @@ Para navegar entre as páginas
 ### npm install react-native-gesture-handler
 
 ### expo install @react-native-masked-view/masked-view
+
+Realiza a chamada a API
+### npm install --save axios
+
+Transforma o CSS em Componentes
+### npm install --save styled-components
